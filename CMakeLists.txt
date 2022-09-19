@@ -7,3 +7,5 @@ target_include_directories(TriggerSource PRIVATE ${CMAKE_SOURCE_DIR}/inc)
 
 target_link_libraries(TriggerSource glog pigpio)
 
+install(TARGETS TriggerSource
+        DESTINATION bin)
