@@ -12,8 +12,14 @@
 
 int main(int argc, char **argv)
 {
-  int status = gpioInitialise();
-  LOG(INFO) << "gpio init = " << status;
+  if (gpioInitialise() < 0)
+  {
+    LOG(INFO) << " gpio init failed.";
+  }
+  else
+  {
+    LOG(INFO) << " gpio init success.";
+  }
 
   // set gpio mode = pwm
   gpioSetMode(PWM_PIN, PI_ALT0);
