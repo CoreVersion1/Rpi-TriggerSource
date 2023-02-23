@@ -30,7 +30,7 @@ int main(int argc, char **argv)
   // start pwm by duty
   gpioPWM(PWM_PIN, PWM_DUTY);
 
-  LOG(INFO) << "PWM is on ,"
+  LOG(INFO) << " PWM is on ,"
             << " Frequency = " << PWM_FRQ << "Hz ,"
             << " Duty = " << PWM_DUTY << "/" << PWM_DUTY_RANGE;
 
