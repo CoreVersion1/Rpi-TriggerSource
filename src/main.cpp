@@ -5,10 +5,10 @@
 #include <pigpio.h>
 #include <glog/logging.h>
 
-#define PWM_PIN 21U
-#define PWM_FRQ 500U // Hz
+#define PWM_PIN        21U
+#define PWM_FRQ        500U  // Hz
 #define PWM_DUTY_RANGE 100U
-#define PWM_DUTY 50U
+#define PWM_DUTY       50U
 
 int main(int argc, char **argv)
 {
